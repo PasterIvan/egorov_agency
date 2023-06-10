@@ -41,17 +41,24 @@ export const Footer: React.FC = () => {
     <div className={styles.footer}>
       <div className={styles.container}>
         <div style={{ width: 160 }} />
-        <div style={{ position: "relative" }}>
+        <form
+          style={{ position: "relative" }}
+          onSubmit={(event) => {
+            event.preventDefault();
+            if (email) dataFetch();
+          }}
+        >
           <input
             type="email"
+            name="email"
             className={styles.inputForm}
             placeholder="Enter your Email and get notified"
             onChange={(event) => setEmail(event.currentTarget.value)}
           />
-          <button type="button" className={styles.submit} onClick={dataFetch}>
+          <button type="submit" className={styles.submit}>
             <img src={arrow_r} alt="" />
           </button>
-        </div>
+        </form>
         <button type="button" className={styles.otherButton}>
           <div>Other Events</div>
           <img src={arrow_d} alt="" />

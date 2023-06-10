@@ -6,14 +6,26 @@
   justify-content: center;
   z-index: 2;
 }
-.logo {
-  padding-top: 110px;
-}
+
 .link {
   z-index: 10;
 }
 .link:hover {
   cursor: pointer;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 104%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #162C4E;
+  opacity: 0.39;
+  margin: 0 0 8px;
+  transition: 0.3s;
 }
 span {
   width: 423px;
@@ -25,23 +37,12 @@ span {
   text-align: center;
   color: rgba(0, 0, 0, 0.8);
 }
-.title {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 104%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #162C4E;
-  opacity: 0.39;
-  margin: 93px 0 8px;
-}
 .subTitle {
   margin-bottom: 32px;
 }
 .buttonTitle {
   margin: 71px 0 12px;
+  transition: 0.3s;
 }
 .goButton {
   display: flex;
@@ -54,3 +55,25 @@ span {
 .goButton div {
   width: 172px;
 }
+
+@media (max-width: 1600px) {
+  .title {
+    font-size: 52px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+    margin: 0 0 20px;
+  }
+  span {
+    width: 300px;
+    font-size: 16px;
+  }
+  .subTitle {
+    width: 286px;
+    margin-bottom: 32px;
+  }
+}
+
+

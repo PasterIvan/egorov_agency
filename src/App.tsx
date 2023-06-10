@@ -7,7 +7,15 @@ import { Header } from "./components/Header/Header";
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        gap: 50,
+      }}
+    >
       <Header />
       <Body />
       <Footer />

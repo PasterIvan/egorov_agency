@@ -14,6 +14,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 4px;
+  transition: 0.3s;
 }
 .countTitle {
   position: absolute;
@@ -27,4 +28,23 @@
   font-size: 16px;
   line-height: 100%;
   color: #FFFFFF;
+}
+
+@media (max-width: 1600px) {
+  .count {
+    font-size: 52px;
+  }
+}
+@media (max-width: 768px) {
+  .count {
+    font-size: 36px;
+  }
+  .countTitle {
+    font-size: 12px;
+    bottom: 11px;
+
+  }
+  .img {
+    width: 64px;
+  }
 }
