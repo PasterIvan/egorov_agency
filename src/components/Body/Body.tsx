@@ -10,7 +10,7 @@ const Fade = require("react-reveal/Fade");
 export const Body: React.FC = () => {
   return (
     <div className={styles.body}>
-      <Fade top duration={1000} delay={200}>
+      <Fade top duration={1000} delay={200} effect="fadeInUp">
         <h1 className={styles.title}>Under Construction</h1>
         <span className={styles.subTitle}>
           We&apos;re making lots of improvements and will be back soon
