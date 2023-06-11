@@ -1,0 +1,131 @@
+.container{
+  /*width: 100%;*/
+  padding: 0 20px 48px;
+  min-height: 100vh;
+}
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 104%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #162C4E;
+  opacity: 0.39;
+  padding: 110px 0 40px;
+  transition: 0.3s;
+}
+.list {
+  width: 100%;
+  padding: 0;
+  transition: .5s;
+}
+input[type="radio"] {
+  display: none;
+}
+.listItem {
+  display: block;
+  background-position: center;
+  background-size: auto;
+}
+
+.imgMem {
+  position: relative;
+  height: 0;
+  transition: .5s;
+}
+.descriptionItem {
+  background: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(20px);
+  width: 100%;
+  display: none;
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  flex-direction: column;
+}
+.descriptionTitle {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  padding: 25px 40px 8px;
+}
+.descriptionDate {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0 40px 29px;
+}
+.descriptionLink {
+  font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-left-width: 6px;
+  margin-left: 40px;
+  width: 135px;
+  text-decoration: none;
+  z-index: -1;
+}
+
+.headItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(-90deg, rgba(22, 44, 78, 0) 0%, #162C4E 100%);
+  border-top: 6px solid #fff;
+  border-bottom: 4px solid #DF2224;
+
+}
+.button {
+  border: none;
+  background: none;
+  width: 100%;
+}
+
+.input:checked + label .headItem {
+  border-bottom: 2px solid #fff;
+  background: #162C4E ;
+}
+.input:checked + label .imgMem {
+  border-top: 4px solid #fff;
+  border-bottom: 2px solid #fff;
+  height: 460px;
+  transition: .5s;
+}
+.input:checked + label .descriptionItem {
+  display: flex;
+}
+
+.listItemTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  padding: 27px 40px;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1600px) {
+  .title {
+    font-size: 52px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+    padding: 46px 0 20px;
+  }
+}

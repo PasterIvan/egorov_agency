@@ -36,6 +36,13 @@ export const Footer: React.FC = () => {
     setOpen(false);
     setError(false);
   };
+  const scrollTo = (): void => {
+    const divElement = document.getElementById("slider");
+
+    if (divElement) {
+      divElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className={styles.footer}>
@@ -59,7 +66,7 @@ export const Footer: React.FC = () => {
             <img src={arrow_r} alt="" />
           </button>
         </form>
-        <button type="button" className={styles.otherButton}>
+        <button type="button" className={styles.otherButton} onClick={scrollTo}>
           <div>Other Events</div>
           <img src={arrow_d} alt="" />
         </button>
